@@ -33,6 +33,7 @@ body {
 
 .search__container input[type="text"] {
   border: 0;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 10px 10px #161616;
           box-shadow: 0px 10px 10px #161616;
   width: 100%;
@@ -109,6 +110,8 @@ body {
 }
 
 .movies__rating {
+  background-color: #313131;
+  padding: 5px;
   font-size: 18px;
 }
 
@@ -123,6 +126,7 @@ body {
 }
 
 .card__poster {
+  border-radius: 5px;
   max-width: 300px;
   min-height: 444px;
   max-height: 444px;
@@ -187,5 +191,106 @@ body {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.footer {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #bdae82;
+}
+
+.footer__container {
+  padding: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #181818;
+}
+
+.footer__container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__github span {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.footer__socials a {
+  vertical-align: sub;
+  margin-right: 20px;
+}
+
+.footer__socials a img:hover {
+  fill: red;
+}
+
+.footer__socials a:last-child {
+  margin-right: 0px;
+}
+
+.footer__socials a:hover {
+  stroke: red;
+  fill: red;
+}
+
+@media (max-width: 920px) {
+  .footer span {
+    font-size: 16px;
+  }
+  .footer a {
+    font-size: 16px;
+  }
+  .footer img {
+    width: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px 0 28px 0;
+  }
+  .footer__github {
+    margin-bottom: -10px;
+  }
+  .footer__github span {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .footer__rolling {
+    margin-bottom: 15px;
+  }
+  .footer__rolling a {
+    font-size: 20px;
+  }
+  .footer__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__socials img {
+    width: 31px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
